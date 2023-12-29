@@ -1,0 +1,14 @@
+{ 
+    "work1": {
+        "src": "images/slide1.jpg"
+    },
+    "work2": {
+        "src": "images/slide2.jpg"
+    },
+    "work3": {
+        "src": "images/slide3.jpg"
+    },
+    "work4": {
+        "src": "images/slide4.jpg"
+    }
+}

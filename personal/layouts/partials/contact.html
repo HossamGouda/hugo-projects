@@ -1,0 +1,17 @@
+<div class="card card--half">
+    <h2>تواصل معي</h2>
+    <p class="contact-desc">يمكنك التواصل معي عبر الوسائل الآتية </p>
+    {{ range .Site.Data.contact }}
+        <div class="line">
+            <div class="line__head">
+                <i class="{{ .icon }}"></i>
+                <h3>{{ .title }}</h3>
+            </div>
+            <div class="line__body">
+                <p>
+                    {{ .content }}
+                </p>
+            </div>
+        </div>
+    {{ end }}
+</div>

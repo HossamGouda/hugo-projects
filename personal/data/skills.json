@@ -1,0 +1,42 @@
+{ 
+    "skill1": {
+        "title": "أدوبي إنديزاين",
+        "percent": "80%",
+        "color": "#e749a0"
+    },
+    "skill2": {
+        "title": "أدوبي فوتوشوب",
+        "percent": "90%",
+        "color": "#87bdf4"
+    },
+    "skill3": {
+        "title": "أدوبي إليستريتور",
+        "percent": "70%",
+        "color": "#f4a950"
+    },
+    "skill4": {
+        "title": "كوريل درو",
+        "percent": "95%",
+        "color": "#8dd352"
+    },
+    "skill5": {
+        "title": "سكيتش",
+        "percent": "82%",
+        "color": "#000000"
+    },
+    "skill6": {
+        "title": "أدوبي أكس دى",
+        "percent": "75%",
+        "color": "#f75eee"
+    },
+    "skill7": {
+        "title": "تجربة المستخدم",
+        "percent": "85%",
+        "color": "#009fdc"
+    },
+    "skill8": {
+        "title": "اختيار الالوان",
+        "percent": "99%",
+        "color": "#f8874f"
+    }
+}

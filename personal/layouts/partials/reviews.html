@@ -1,0 +1,27 @@
+<div class="card card--half">
+    <h2>آراء العملاء</h2>
+
+    <div class="slides-container" id="reviews">
+
+        <div class="slide-container__wraper">
+
+            {{ range .Site.Data.reviews }}
+
+            <div class="slides fade">
+                <div class="review-holder">
+                    <p>{{ .content }}</p>
+                    <h3>{{ .title }}</h3>
+                </div>
+            </div>
+
+            {{ end }}
+
+        </div>
+
+        <div class="slides-BTNS">
+            <span class="next"><i class="fas fa-chevron-right"></i></span>
+            <span class="prev"><i class="fas fa-chevron-left"></i></span>
+        </div>
+
+    </div>
+</div>

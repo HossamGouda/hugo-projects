@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ partial "navbar" . }}
+  {{ partial "hero" . }}
+  <div class="post-view">
+    <div class="post-view__container">
+      {{ .Content }}
+    </div>
+  </div>
+{{ end }}

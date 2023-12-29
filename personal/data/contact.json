@@ -1,0 +1,22 @@
+{ 
+    "call": {
+        "title": "الهاتف المحمول",
+        "icon": "fas fa-phone",
+        "content": "00 0000 000 00"
+    },
+    "chat": {
+        "title": "مراسلة عبر واتس أب",
+        "icon": "fab fa-whatsapp",
+        "content": "00 0000 00 00"
+    },
+    "email1": {
+        "title": "البريد الإلكتروني الشخصى",
+        "icon": "fas fa-envelope",
+        "content": "example1@example.com"
+    },
+    "email2": {
+        "title": "البريد الإلكتروني الخاص بالعمل",
+        "icon": "fas fa-envelope",
+        "content": "example1@example.com"
+    }
+}

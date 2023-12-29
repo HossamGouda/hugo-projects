@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ar">
+  {{ partial "head" . }}
+
+
+  <body class="{{ .Params.flag }}">
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "bottom" . }}
+    {{ partial "footer" . }}
+  </body>
+</html>

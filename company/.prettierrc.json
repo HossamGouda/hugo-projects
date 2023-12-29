@@ -1,0 +1,11 @@
+{
+  "overrides": [
+    { "files": ["*.html"], "options": { "parser": "go-template" } },
+    {
+      "files": ["*.html", "*.css", "*.scss", "*.sass"],
+      "options": { "singleQuote": false }
+    }
+  ],
+  "singleQuote": true,
+  "plugins": ["prettier-plugin-go-template"]
+}

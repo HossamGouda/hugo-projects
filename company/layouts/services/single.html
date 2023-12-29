@@ -1,0 +1,13 @@
+{{ define "main" }}
+    {{ partial "header" . }}
+    <div class="service-header">
+        <i class="{{.Params.icon}}"></i>
+        <h1>{{.Title}}</h1>
+    </div>
+    <div class="service-info">
+        <div class="service-info__container">
+            {{.Content}}
+        </div>
+    </div>
+
+{{end}}

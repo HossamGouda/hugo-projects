@@ -1,0 +1,51 @@
+{{ $indicator := .Params.flag }}
+{{ $landing := "landing-page" }}
+{{ $posts := "posts-page" }}
+{{ $post := "post-page" }}
+{{ $tags := "tags-page" }}
+{{ $categories := "categories-page" }}
+<div
+  class="hero {{ if eq $indicator $landing }}
+    hero--landing
+  {{ else if eq $indicator $posts }}
+    hero--posts
+  {{ else if eq $indicator $tags }}
+    hero--tag
+  {{ else if eq $indicator $categories }}
+    hero--category
+  {{ else }}
+    hero--default
+  {{ end }}
+    "
+  style="{{ if eq $indicator $post }}
+    background-image: linear-gradient( rgb(255 255 255 / 70%), rgb(255 255 255
+    /90%)), url('{{ .Params.thumb | relURL }}');
+  {{ end }}"
+>
+  <div class="hero__container">
+    {{ if eq $indicator $landing }}
+      <h1>{{ .Params.firstTitle }}</h1>
+      <p>{{ .Params.secondTitle }}</p>
+      <a href="/posts/"> جميع التدوينات </a>
+    {{ else if eq $indicator $posts }}
+      <h1>{{ .Title }}</h1>
+    {{ else if eq $indicator $tags }}
+      <h1>{{ .Title }}</h1>
+    {{ else if eq $indicator $categories }}
+      <h1>{{ .Title }}</h1>
+    {{ else if eq $indicator $post }}
+      <h1>{{ .Title }}</h1>
+      <ul>
+        {{ range (.GetTerms "tags") }}
+          <li><a href="{{ .Permalink }}">#{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+    {{ else }}
+      <h1>
+        <span>كل مايخص</span>
+        {{ .Title }}
+      </h1>
+    {{ end }}
+
+  </div>
+</div>

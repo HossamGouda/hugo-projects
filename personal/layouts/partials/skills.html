@@ -1,0 +1,20 @@
+<div class="card card--full">
+    <h2>المهارات</h2>
+    <div class="skills">
+        <div class="skills__holder">
+            {{ range .Site.Data.skills }}
+            <div class="skill">
+                <div class="skill__info">
+                    <div class="skill__info__head ">
+                        <h2>{{ .title }}</h2>
+                        <span>{{ .percent }}</span>
+                    </div>
+                    <div class="skill__info__bar">
+                        <span class="layer" style="width: {{ .percent }}; background-color: {{ .color }}"></span>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
